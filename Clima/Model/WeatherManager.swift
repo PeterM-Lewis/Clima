@@ -19,7 +19,7 @@ struct WeatherManager {
     let weatherURL = "https://api.openweathermap.org/data/2.5/weather?APPID=f910d6d4eee9a442c8a152801d5ac68b&units=metric"
     
     func fetchWeather(cityName: String) {
-        let urlString = "\(weatherURL)&q=\(cityName)"
+        let urlString = "\(weatherURL)&q=\(cityName)&appid=YOUR KEY"
         performRequest(with: urlString)
     }
     
